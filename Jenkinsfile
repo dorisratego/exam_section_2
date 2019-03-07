@@ -23,6 +23,9 @@ sh "docker push dratego/exam_section_2:latest"
 stage('Apply changes to the environment') {
 sh "ls -l"
 }
+  
+  stage('Run'){
+  sh "docker run -d -p 3259:80/tcp exam_section_2:latest"}
 
 
 }
