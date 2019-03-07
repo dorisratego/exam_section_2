@@ -24,9 +24,5 @@ stage('Apply changes to the environment') {
 sh "ls -l"
 }
 
-stage('Expose port'){
-sh "docker run --expose=3259"
-}
-
 
 }
